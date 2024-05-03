@@ -267,9 +267,8 @@ body{
     border-radius: 6px;
 }
 
-/* <====== Login Style ======> */ 
-
-body.login-body {
+/* <====== TAS Style ======> */ 
+body.tas-body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -278,16 +277,13 @@ body.login-body {
     align-items: center;
 }
 
-.bg {
+.tas-body .bg {
     background: url('../img/bg-image.jpg');
     height: 100vh;
     width: 100%;
     position: absolute;
     background-size: cover;
     z-index: -1;
-}
-
-.login-body .bg {
     filter: blur(5px);
 }
 
@@ -406,8 +402,27 @@ input[type="checkbox"]:checked::before {
     opacity: 1; 
 }
 
+/* <====== Login Style ======> */ 
+body.login-body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg {
+    background: url('../img/bg-image.jpg');
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+}
+
 .login-modal{
-    display: none;
+    display: block;
     position: absolute;
     background-color: rgba(233, 246, 255, 1);
     top: 50%;
