@@ -96,15 +96,27 @@ body{
     padding-left: 2px;
 }
 
-.col.col-2-row-1 li.login {
-    padding-left: 35px; 
-    padding-right: 35px;
+.col.col-2-row-1 button.login {
+    padding-left: 28px; 
+    padding-right: 28px;
     padding-top: 4px; 
     padding-bottom: 4px; 
     margin-left: 25px;
     margin-right: 14px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
     background-color: rgba(254, 122, 54, 1);
+    color: rgba(233, 246, 255, 1);
+    border: none;
     border-radius: 6px;
+}
+
+.col.col-2-row-1 button.login:hover{
+    border: 1px rgba(254, 122, 54, 1);
+    background-color: white;
+    color: rgba(254, 122, 54, 1);
+    transition: background-color 0.2s ease;
 }
 
 .col.col-2-row-1 li:not(.login) {
